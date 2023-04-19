@@ -3,6 +3,7 @@ package com.urbanladder.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.urbanladder.base.TestBase;
 import com.urbanladder.utils.TestUtils;
@@ -24,6 +25,16 @@ public class ShoppingCartPage extends TestBase{
 	
 	@FindBy(xpath = "//input[@value='Place Order']")
 	WebElement placeOrder;
+	
+	//verification method added.
+	/**
+	 * This method verifies whether "Shopping Cart" page is displayed or not.
+	 */
+	public void verifyShoppingCartPage() {
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Shopping Cart - Urban Ladder";
+		Assert.assertEquals(actualTitle, expectedTitle, "Title mismatched. Required page not displayed.");
+	}
 
 	/**
 	 * This method selects quantity on Cart page.
