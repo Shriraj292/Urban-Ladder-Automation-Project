@@ -16,8 +16,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.urbanladder.commonmethods.HeaderValidationMethods;
 import com.urbanladder.pages.HomePage;
 import com.urbanladder.pages.LoginPage;
+import com.urbanladder.pages.MyWishlistPage;
 import com.urbanladder.pages.PaymentPage;
 import com.urbanladder.pages.ProductDetailsPage;
 import com.urbanladder.pages.ShoppingCartPage;
@@ -39,6 +41,8 @@ public class TestBase {
 	public ProductDetailsPage productDetailsPg;
 	public ShoppingCartPage shoppingCartPg;
 	public PaymentPage paymentPg;
+	public MyWishlistPage myWishlistPg;
+	public HeaderValidationMethods hdrValidationMtds;
 		
 	public TestBase() {
 		try {
@@ -112,6 +116,8 @@ public class TestBase {
 		productDetailsPg = new ProductDetailsPage();
 		shoppingCartPg = new ShoppingCartPage();
 		paymentPg = new PaymentPage();
+		myWishlistPg = new MyWishlistPage();
+		hdrValidationMtds = new HeaderValidationMethods();
 	}
 	
 	@AfterTest
