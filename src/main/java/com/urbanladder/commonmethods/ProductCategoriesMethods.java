@@ -48,4 +48,36 @@ public class ProductCategoriesMethods extends TestBase{
 		Assert.assertEquals(actualTitle, expectedTitle, "Title not matched.");
 	}
 	
+	/**
+	 * This method clicks on "Add to Wishlist" option of the required product 
+	 * and validates whether product is added to wishlist.
+	 * @param productName
+	 */
+	public void addToWishlist(String productName) {
+		String productTitleXpath = productTitleBlockXpath + "/descendant::span[normalize-space(text())='" + productName + "']";
+		
+		String addToWishlistXpath = productTitleXpath + "/ancestor::div[@class='product-info-block']"
+				+ "/following-sibling::div[@class='wishproduct wishblock']";
+				//+ "/span[text()='Add to Wishlist']";
+		
+		try {
+			WebElement productTitle = driver.findElement(By.xpath(productTitleXpath));
+			TestUtils.hoverOver(productTitle);
+			
+			try {
+				WebElement addToWishlistElement = driver.findElement(By.xpath(addToWishlistXpath));
+				addToWishlistElement.click();
+			} catch (NoSuchElementException e) {
+				e.printStackTrace();
+				Assert.fail("Add to Wishlist for required product " + productName + " not found.");
+			}
+			
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			Assert.fail("Required product " + productName + " not found.");
+		}
+		
+		hdrValidationMtds.viewWishlist();
+	}
+	
 }
