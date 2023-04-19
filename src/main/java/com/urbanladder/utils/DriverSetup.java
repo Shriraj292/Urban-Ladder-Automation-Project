@@ -2,6 +2,7 @@ package com.urbanladder.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -11,6 +12,7 @@ public class DriverSetup {
 
 	//Declaring WebDriver instance
 	private static WebDriver driver;
+	static ChromeOptions options = new ChromeOptions();
 	
 	/**
 	 * Method name: getChromeDriver
@@ -21,8 +23,10 @@ public class DriverSetup {
 		//Setup WebDriver Manager for Chrome
 		WebDriverManager.chromedriver().setup();
 		
+		options.addArguments("--remote-allow-origins=*");
+		
 		//Initializing WebDriver instance
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		
 		return driver;
 	}
