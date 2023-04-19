@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.urbanladder.qa.testcases.PlaceOrderTest">
+      <class name="com.urbanladder.testcases.PlaceOrderTest">
         <methods>
           <include name="logout"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="orderGamingChair"/>
+          <include name="orderBeanBag"/>
           <include name="orderComputerTable"/>
           <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.urbanladder.qa.testcases.PlaceOrderTest -->
+      </class> <!-- com.urbanladder.testcases.PlaceOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

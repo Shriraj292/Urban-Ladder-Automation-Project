@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-01T20:24:17 IST" name="Default suite" finished-at="2023-04-01T20:24:57 IST" duration-ms="40129">
+  <suite started-at="2023-04-12T11:58:27 IST" name="Default suite" finished-at="2023-04-12T12:01:12 IST" duration-ms="164942">
     <groups>
     </groups>
-    <test started-at="2023-04-01T20:24:17 IST" name="Default test" finished-at="2023-04-01T20:24:57 IST" duration-ms="40129">
-      <class name="com.urbanladder.qa.testcases.PlaceOrderTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.urbanladder.qa.testcases.PlaceOrderTest@428640fa]" started-at="2023-04-01T20:24:17 IST" name="setUp" finished-at="2023-04-01T20:24:29 IST" duration-ms="11512" status="PASS">
+    <test started-at="2023-04-12T11:58:27 IST" name="Default test" finished-at="2023-04-12T12:01:12 IST" duration-ms="164942">
+      <class name="com.urbanladder.testcases.PlaceOrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:58:27 IST" name="setUp" finished-at="2023-04-12T11:58:40 IST" duration-ms="12858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.urbanladder.qa.testcases.PlaceOrderTest@428640fa]" started-at="2023-04-01T20:24:29 IST" name="loginTest" finished-at="2023-04-01T20:24:35 IST" duration-ms="6050" status="PASS">
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:58:40 IST" name="loginTest" finished-at="2023-04-12T11:58:49 IST" duration-ms="9299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="orderComputerTable()[pri:0, instance:com.urbanladder.qa.testcases.PlaceOrderTest@428640fa]" started-at="2023-04-01T20:24:35 IST" name="orderComputerTable" finished-at="2023-04-01T20:24:55 IST" duration-ms="20490" status="PASS">
+        <test-method signature="orderComputerTable()[pri:1, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:58:49 IST" name="orderComputerTable" description="Computer Table Order journey till placing order. The order will not be placed." finished-at="2023-04-12T11:59:20 IST" duration-ms="30910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderComputerTable -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.urbanladder.qa.testcases.PlaceOrderTest@428640fa]" started-at="2023-04-01T20:24:55 IST" name="logout" finished-at="2023-04-01T20:24:57 IST" duration-ms="1526" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:59:20 IST" name="logout" finished-at="2023-04-12T11:59:24 IST" duration-ms="4118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.urbanladder.qa.testcases.PlaceOrderTest@428640fa]" started-at="2023-04-01T20:24:57 IST" name="tearDown" finished-at="2023-04-01T20:24:57 IST" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:59:24 IST" name="loginTest" finished-at="2023-04-12T11:59:32 IST" duration-ms="7815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="orderGamingChair()[pri:2, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:59:32 IST" name="orderGamingChair" description="Gaming Chair Order journey till placing order. The order will not be placed." finished-at="2023-04-12T11:59:58 IST" duration-ms="25827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderGamingChair -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T11:59:58 IST" name="logout" finished-at="2023-04-12T12:00:21 IST" duration-ms="22611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T12:00:21 IST" name="loginTest" finished-at="2023-04-12T12:00:29 IST" duration-ms="8339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="orderBeanBag()[pri:3, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T12:00:29 IST" name="orderBeanBag" description="Bean bag Order journey till placing order. The order will not be placed." finished-at="2023-04-12T12:00:48 IST" duration-ms="19017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderBeanBag -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T12:00:48 IST" name="logout" finished-at="2023-04-12T12:01:12 IST" duration-ms="23518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.urbanladder.testcases.PlaceOrderTest@4310d43]" started-at="2023-04-12T12:01:12 IST" name="tearDown" finished-at="2023-04-12T12:01:12 IST" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.urbanladder.qa.testcases.PlaceOrderTest -->
+      </class> <!-- com.urbanladder.testcases.PlaceOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

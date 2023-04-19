@@ -26,7 +26,6 @@ public class ShoppingCartPage extends TestBase{
 	@FindBy(xpath = "//input[@value='Place Order']")
 	WebElement placeOrder;
 	
-	//verification method added.
 	/**
 	 * This method verifies whether "Shopping Cart" page is displayed or not.
 	 */

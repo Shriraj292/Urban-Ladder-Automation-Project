@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\IC0N\AppData\Local\Temp\testng-eclipse--1955396824\testng-customsuite.xml</span>
+                    <span>C:\Users\IC0N\AppData\Local\Temp\testng-eclipse--1545303396\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.urbanladder.qa.testcases.PlaceOrderTest" class="method navigator-link" hash-for-method="orderComputerTable">orderComputerTable</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.urbanladder.testcases.PlaceOrderTest" class="method navigator-link" hash-for-method="orderBeanBag">orderBeanBag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.urbanladder.testcases.PlaceOrderTest" class="method navigator-link" hash-for-method="orderComputerTable">orderComputerTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.urbanladder.testcases.PlaceOrderTest" class="method navigator-link" hash-for-method="orderGamingChair">orderGamingChair</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +132,34 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.urbanladder.qa.testcases.PlaceOrderTest</span>
+              <span class="class-name">com.urbanladder.testcases.PlaceOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderBeanBag">
+                  </a> <!-- orderBeanBag -->
+                  <span class="method-name">orderBeanBag</span>
+                  <em>
+(Bean bag Order journey till placing order. The order will not be placed.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="orderComputerTable">
                   </a> <!-- orderComputerTable -->
                   <span class="method-name">orderComputerTable</span>
+                  <em>
+(Computer Table Order journey till placing order. The order will not be placed.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderGamingChair">
+                  </a> <!-- orderGamingChair -->
+                  <span class="method-name">orderGamingChair</span>
+                  <em>
+(Gaming Chair Order journey till placing order. The order will not be placed.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\IC0N\AppData\Local\Temp\testng-eclipse--1955396824\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\IC0N\AppData\Local\Temp\testng-eclipse--1545303396\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +176,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.urbanladder.qa.testcases.PlaceOrderTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;orderComputerTable&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.urbanladder.qa.testcases.PlaceOrderTest --&gt;
+      &lt;class name=&quot;com.urbanladder.testcases.PlaceOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,16 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'orderComputerTable')
-data.setCell(0, 2, 'com.urbanladder.qa.testcases.PlaceOrderTest')
-data.setCell(0, 3, 20490);
+data.setCell(0, 2, 'com.urbanladder.testcases.PlaceOrderTest')
+data.setCell(0, 3, 30910);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'orderGamingChair')
+data.setCell(1, 2, 'com.urbanladder.testcases.PlaceOrderTest')
+data.setCell(1, 3, 25827);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'orderBeanBag')
+data.setCell(2, 2, 'com.urbanladder.testcases.PlaceOrderTest')
+data.setCell(2, 3, 19017);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -225,26 +259,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.urbanladder.qa.testcases.PlaceOrderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.urbanladder.testcases.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">11565 ms</span>
+                <span class="method-start">12930 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderComputerTable</span>
-                <span class="method-start">17616 ms</span>
+                <span class="method-start">22232 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">38111 ms</span>
+                <span class="method-start">53154 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">57281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderGamingChair</span>
+                <span class="method-start">65096 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">90927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">113541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderBeanBag</span>
+                <span class="method-start">121880 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">140903 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39641 ms</span>
+                <span class="method-start">164428 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
