@@ -11,7 +11,7 @@ public class SignUpAndLoginTest extends TestBase{
 	public void signUpTest() {
 		homePg.clickOnSignUp();
 		signUpPg.verifySignUpPage();
-		signUpPg.enterDetailsAndClickSignUp("anonymous@gmail.com", "TestPass@123");
+		signUpPg.enterDetailsAndClickSignUp("anonymousxyz@gmail.com", "TestPass@123");
 		boolean isSuccessful = homePg.verifySignUpOrLoginIsSuccessful();
 		Assert.assertTrue(isSuccessful);
 	}
