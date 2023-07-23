@@ -45,7 +45,7 @@ mvn clean install
 mvn test
 ```
 ## Project Structure
-![image](https://github.com/Shriraj292/Urban-Ladder-Automation-Project/assets/88680292/a793eb22-b374-46e0-b37e-95bb337fbe8a)
+![image](https://github.com/Shriraj292/Urban-Ladder-Automation-Project/assets/88680292/d0a7008e-4c47-4712-af59-33e367010aca)
 
 ## Contribute
 
