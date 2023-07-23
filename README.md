@@ -44,6 +44,8 @@ mvn clean install
 ```Java
 mvn test
 ```
+## Project Structure
+![image](https://github.com/Shriraj292/Urban-Ladder-Automation-Project/assets/88680292/a793eb22-b374-46e0-b37e-95bb337fbe8a)
 
 ## Contribute
 
